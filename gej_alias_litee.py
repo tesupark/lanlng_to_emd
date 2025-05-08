@@ -4,7 +4,7 @@ from shapely.geometry import Point
 from shapely.ops import transform
 from tqdm import tqdm
 
-shp_path = "./emd"
+shp_path = "./emd_20250311/emd"
 gdf = gpd.read_file(f"{shp_path}.shp", encoding="cp949")
 
 # 1. 유효하지 않은 기하학 수정

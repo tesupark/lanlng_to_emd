@@ -3,7 +3,7 @@ import json
 from shapely.geometry import mapping
 
 # 1. SHP 파일 읽기 (EUC-KR 인코딩)
-shp_path = "./emd"  # .shp, .shx, .dbf 세 파일 존재해야 함
+shp_path = "./emd_20250311/emd"  # .shp, .shx, .dbf 세 파일 존재해야 함
 gdf = gpd.read_file(f"{shp_path}.shp", encoding='cp949')
 
 # 2. 좌표계 설정 및 위경도 변환
@@ -30,7 +30,7 @@ for _, row in gdf.iterrows():
     })
 
 # 5. 저장
-output_path = "eupmyeondong_mapped1.json"
+output_path = "eupmyeondong_mapped.json"
 with open(output_path, "w", encoding="utf-8") as f:
     json.dump(result, f, ensure_ascii=False, indent=2)
 
