@@ -1,8 +1,9 @@
 /location
 /prototype
-
+/emd_20250311
+/emd_2023
 emd.dbf
 emd.shp
 emd.shx
 emd_touch_neighbors.json
-eupmyeondong_mapped1.json
+eupmyeondong_mapped.json
